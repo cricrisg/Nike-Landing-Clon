@@ -1,0 +1,158 @@
+@import '../utils/variables', '../utils/mixins';
+
+.header__sup{
+    padding: .4rem;
+    background-color: var(--gris-claro);
+
+    & ul{
+        @include flex(flex, center, center);
+    }
+
+    @include flex(flex, space-between, center);
+
+    @include movil {
+        display: none;
+    }
+    @include tablet{
+        display: none;
+    }
+
+}
+.sup__li{
+    font-size: .8em;
+    color: var(--negro);
+    border-right: .5px solid var(--negro);
+    &:hover{
+        color: var(--gris-oscuro);
+    }
+}
+.sup__a{
+    margin: 0 1rem;
+    
+}
+
+.header__nav{
+    padding: .8rem;
+    @include flex(flex, space-between, center);
+    width: 100%;
+
+}
+
+.nav__ul{
+    @include flex(flex, center, center);
+
+    & .nav__li--li{
+        color: var(--negro);
+        padding: .8rem;
+        font-size: 1em;
+        line-height: 1.5;
+        border-bottom: 2px solid transparent;
+        transition: border-color .1s linear;
+        &:hover{
+            border-color: var(--negro);
+            cursor: pointer;
+            }
+    }
+
+    @include movil{
+        display: none;
+    }
+    @include tablet{
+        display: none;
+    }
+}
+
+
+
+.form__container{
+    @include flex(flex, center, center);
+    background-color: var(--gris-claro);
+    padding: .4rem;
+    border-radius: 50px;
+    & svg{
+        margin-right: .8rem;
+    }
+    &:hover {
+        background-color: #e7e1e1;
+    }
+
+    @include movil{
+        display: none;
+    }
+    @include tablet{
+        display: none;
+    }
+}
+
+.form__input{
+    background-color: var(--gris-claro);
+    padding: .5rem;
+    border-radius: 50px;
+    color:#757575;
+    &:hover {
+        background-color: #e7e1e1;
+    }
+}
+
+.header__search{
+    @include flex(flex, space-between, center)
+    
+}
+
+.search__icons{
+    @include flex(flex, center, center);
+    margin-left:1rem;
+    & svg{
+        margin-right: .8rem;
+        border-radius: 50%;
+    }
+    & svg:hover{
+        background-color: var(--gris-claro);
+        cursor: pointer;
+    }
+    @include movil{
+        display: none;
+    }
+    @include tablet{
+        display: none;
+    }
+
+}
+
+.header__mobile{
+    display: none;
+
+    @include movil{
+        @include flex(flex, center, center);
+        
+        & svg{
+            margin-right: 1rem;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+
+    @include tablet{
+        @include flex(flex, center, center);
+        & svg{
+        margin-right: 1rem;
+        &:hover{
+            cursor: pointer;
+        
+    }
+    }
+    
+}
+}
+
+
+.header_inf{
+    background-color: var(--gris-claro);
+    color: var(--negro);
+    padding: .5rem;
+    text-align: center;
+    & p{
+        font-size: .8em;
+    }
+}

@@ -1,0 +1,407 @@
+@import '../utils/variables', '../utils/mixins';
+
+.desenfoque> :not(.open-sidebar, .sidebar){
+    filter: blur(3px);
+}
+
+.sidebar{
+    background-color: white;
+    position: absolute;
+    width: 0;
+    overflow: hidden;
+    right: 0;
+    top: 5em;
+    transition: width 0.3s ease;
+    z-index: 2;
+
+    & .lead{
+        font-size: 1.3em;
+    }
+}
+
+.open-sidebar {
+    display: grid;
+    grid-template-columns: 10em 10em;
+    grid-template-rows: 3em 3em 3em 3em 3em;
+    width: 250px;
+    padding: 2em;
+
+    & .sidebar__text{
+        margin-top: 5em;
+        & .sidebar__p{
+            color: var(--gris-oscuro);
+            margin: 0 0 2em 0;
+            & span{
+                color: var(--negro);
+            }
+        }
+    
+        & .sidebar__btn--first{
+            background-color: var(--negro);
+            margin: 0 0 1em 0;
+            color: white;
+        }
+        & .sidebar__btn--sec{
+            border: 1px solid var(--gris-oscuro);
+        }
+    }
+}
+
+.btn{
+    border-radius: 50px;
+    padding: .6rem;
+    min-width: 7rem;
+}
+
+.section__container{
+    width: 90%;
+    margin: auto;
+    & .banner__responsive--img{
+        display: none;
+    }
+    & .section--titular{
+        text-align: start;
+        font-size: 1.5em;
+        padding: 1em 0;
+    }
+
+    & .section--img{
+        position: relative;
+        display: grid;
+        gap: 1em;
+        grid-template-columns: repeat( 3 , 1fr);
+
+        & .section--btn{
+            width: 100%;
+            position: absolute;
+            display: grid;
+            gap: 1em;
+            grid-template-columns: repeat( 3 , 1fr);
+            top: 92%;
+            left: 5%;
+
+            & .btn{
+                background-color: white;
+                max-width: 8em;
+                &:hover{
+                    background-color: var(--gris-oscuro);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    & .text__container{
+        min-height: 300px;
+        @include flex(flex, space-evenly, center);
+        flex-direction: column;
+        padding: 1rem;
+        word-wrap: break-word;
+        text-align: center;
+        
+        &--h2{
+        font-size: 72px;
+        font-weight: 900;
+        line-height: 1.2em;
+        letter-spacing: -.1em;
+        
+        @include tablet{
+            font-size: 3em;        
+        }
+        @include movil{
+            font-size: 2.3em;
+        }
+        }
+
+        & .btn-container{
+            @include flex(flex, center, center);
+            gap: 1em;
+            
+            @include movil{
+                @include flex(flex, center, center);
+                flex-direction: column;
+                gap: 1;
+                & .btn{
+                    width: 15em;
+                }
+            }
+        }
+        &--btn{
+            background-color: var(--negro);
+            color: white;
+            
+            &:hover{
+                background-color: var(--gris-oscuro);
+                cursor: pointer;
+            }
+        }
+        @include tablet{
+            text-align: start;
+            align-items: flex-start;
+        }
+
+        @include movil{
+            text-align: start;
+            align-items: flex-start;
+        }
+    }
+    @include movil{
+        .section__titular{
+            text-align: start;
+        }
+        
+    }
+
+    @include tablet{
+        .banner__responsive--img{
+            display: block;
+        }
+        .banner__bg{
+            display:none;
+        }
+    }
+}
+
+.carousel{
+    margin: 4em 0;
+
+    & .carousel__container{
+    padding: 2em 1em;
+    overflow: hidden;
+}
+}
+
+.carousel__img{
+    margin-right: 1em;
+
+    &:hover{
+        cursor: pointer;
+    }
+    & .img{
+        max-height: 500px;
+    }
+    & .carousel__text {
+        display: grid;
+        grid-template-columns: 3em, 3em;
+        grid-template-rows: 3em, 3em;
+        margin-top: 1em;
+        padding: 0 1em;
+        & .carousel__text--p{
+            color: var(--gris-oscuro);
+            grid-column: 1;
+        }
+        & .carousel__text--price{
+            text-align: end;
+            grid-column: 2;
+        }
+    }
+}
+
+.btn__container{
+    width: 100%;
+    padding: 1em;
+    @include flex(flex, space-between, center);
+    & p{
+        font-size: 1.5em;
+        margin-left: 1em;
+    }
+}
+
+.btn__container--icons{
+    @include flex(flex, center, center);
+
+    & .btn-prev, .btn-next , .btn-prev--sec, .btn-next--sec{
+        background-color: #e5e5e5;
+        border-radius: 50%;
+        margin-right: .8em;
+        opacity: 50%;
+        cursor: pointer;
+        &:hover{
+            opacity: 100%;
+        }
+    }
+}
+
+.section__container{
+
+    & .section__titular{
+        font-size: 1.5em;
+        padding: 1em 0;
+
+        @include movil{
+            text-align: center;
+            font-size: 1.4em;
+        }
+    }
+}
+
+.section__img{
+    display: grid;
+    gap: .8em;
+    grid-template-columns:repeat(2, 1fr);
+    position: relative;
+    @include movil {
+        grid-template-columns: repeat(1, 1fr);
+        gap: .5em;
+    }
+}
+
+.section__data{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+    & .section__data--div{
+        align-self: end;
+        padding: 3em;
+    }
+    & p{
+        color: white;
+        margin-bottom: 2em;
+    }
+    & .btn{
+        background-color: white;
+        &:hover{
+            background-color: var(--gris-oscuro);
+            cursor: pointer;
+        }
+    }
+    @include movil{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+    
+
+.carousel__container--second{
+    padding: 2em 1em;
+    overflow: hidden;
+}
+
+.section__last-menu{
+    margin-top: 2em;
+    padding: 2em;
+    @include flex(flex, center, center);
+    gap: 2em;
+
+        & p{
+            margin-top: 1.5em;
+            line-height: 1em;
+            color: var(--gris-oscuro);
+
+            &:hover{
+                color: var(--negro);
+                cursor: pointer;
+            }
+        }
+        & .hidden-content{
+            height: 0;
+            overflow: hidden;
+        }
+
+        &:hover{
+            .hidden-content{
+                overflow:visible;
+                height: 15em;
+
+            }
+        }
+
+        @include movil{
+            @include flex(flex, center, start);
+            flex-direction: column;
+            .menu__div h3:hover{
+                cursor: pointer;
+            }
+            .menu__content{
+                height: 0;
+                padding: 0em;
+                overflow: hidden;
+                transition: all .3s ease;
+            }
+            .activo .menu__content{
+                height: 100%;
+            }
+        }
+
+}
+
+.carousel__img .btn{
+        background-color: black;
+        color:white;
+        margin: 1em 0;
+        &:hover{
+            background-color: var(--gris-oscuro);
+            cursor: pointer;
+        }
+}
+
+.footer{
+    background-color: white;
+    padding: 3em 0;
+}
+
+.footer__container{
+    background-color: var(--negro);
+    padding: 2em;
+}
+.footer__ul--container{
+    font-size: .7em;
+    line-height: 2.5em;
+    display: grid;
+    grid-template-columns: repeat( 4 , 1fr);
+    gap: 1em;
+    @include movil{
+        display: grid;
+        grid-template-columns: repeat( 1 , 1fr);
+        .content{
+            height: 0;
+            padding: 0em;
+            overflow: hidden;
+            transition: all .3s ease;
+        }
+        .active .content{
+            height: 100%;
+        }
+
+    }
+}
+
+.colum{
+    color: var(--gris-oscuro);
+    & li:hover{
+        color: white;
+        cursor: pointer;
+    }
+    & >:first-child{
+        color: white;
+        @include movil{
+            border-top: .5px solid var(--gris-oscuro);
+        }
+        
+    }
+}
+
+.first__colum{
+    color: white;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.small__colum{
+    color: var(--gris-oscuro);
+    padding: 2em;
+    @include flex(flex, end, center);
+    gap: 2em;
+    font-size: small;
+
+    @include movil{
+        display: none;
+    }
+}
+
+
+
