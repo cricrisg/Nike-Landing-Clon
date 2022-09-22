@@ -11,7 +11,7 @@
 <br/>
 
 <img src="./assets/landing.PNG" width="600" />
-<img  src="./assets/landing2.PNG"  width="600" align="rigth"/>
+<img  src="./assets/landing2.PNG"  width="600" align="right"/>
 
 
 ## Url para ver el resultado
