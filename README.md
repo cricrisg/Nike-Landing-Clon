@@ -10,8 +10,10 @@
 
 <br/>
 
-<img src="./assets/landing.PNG" width="500" align="right"/>
+<p align="center">
+<img src="./assets/landing.PNG" width="500" />
 <img  src="./assets/landing2.PNG"  width="500" />
+</p>
 
 
 ## Url para ver el resultado
