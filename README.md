@@ -7,8 +7,8 @@
 - HTML 📄
 - SASS/ SCSS 🎨
 - JavaScript✨
-<p>Overview</p>
-<img url"https://user-images.githubusercontent.com/91671557/191686692-bd63c13a-1cc7-4568-bbd4-e0dc4fdd7b13.PNG" />
+
+<img url"./assets/landing.png" />
 
 
 ## Url para ver el resultado
