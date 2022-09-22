@@ -10,7 +10,7 @@
 
 <br/>
 
-<img src="./assets/landing.PNG" width="500" align="right" />
+<img src="./assets/landing.PNG" width="500" align="center" />
 //<img align="right" src="./assets/logo.png" width="400"/>
 
 
