@@ -7,7 +7,9 @@
 - HTML 📄
 - SASS/ SCSS 🎨
 - JavaScript✨
+<p>Overview</p>
+<img url="" />
 
 ## Url para ver el resultado
----
+<br/>
 Aquí pueder ver el proyecto: https://nike-clon.netlify.app/
