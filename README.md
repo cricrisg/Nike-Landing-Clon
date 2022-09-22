@@ -8,7 +8,9 @@
 - SASS/ SCSS 🎨
 - JavaScript✨
 
-<img src="./assets/landing.PNG" />
+<br/>
+
+<img src="./assets/landing.PNG" width=400 align= "center" />
 
 
 ## Url para ver el resultado
