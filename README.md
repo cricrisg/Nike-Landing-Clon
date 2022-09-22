@@ -8,7 +8,7 @@
 - SASS/ SCSS 🎨
 - JavaScript✨
 
-<img url"./assets/landing.png" />
+<img url"./assets/landing.PNG" />
 
 
 ## Url para ver el resultado
