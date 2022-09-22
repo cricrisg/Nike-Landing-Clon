@@ -11,8 +11,8 @@
 <br/>
 
 <p align="center">
-<img src="./assets/landing.PNG" width="500" />
-<img  src="./assets/landing2.PNG"  width="500" />
+<img src="./assets/landing.PNG"  />
+<img  src="./assets/landing2.PNG"   />
 </p>
 
 
