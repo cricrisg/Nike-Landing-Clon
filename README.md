@@ -1,4 +1,4 @@
-# Nike Landing Page Clon
+# Nike Landing Page Clone
 ## Descripción 
 <br/>
 <p>Esta web es una imitación de la página web de Nike. Tiene maquetación, es responsive y un poco de funcionalidad para los carrousels o los acordeones. </p>
