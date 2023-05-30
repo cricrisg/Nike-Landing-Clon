@@ -9,6 +9,10 @@
 - SASS/ SCSS 🎨
 - JavaScript✨
  </p>
+ 
+ ## Url para ver el resultado
+<br/>
+Aquí pueder ver el proyecto: https://nike-clon.netlify.app/
 
 <br/>
 
@@ -18,6 +22,4 @@
 </p>
 
 
-## Url para ver el resultado
-<br/>
-Aquí pueder ver el proyecto: https://nike-clon.netlify.app/
+
